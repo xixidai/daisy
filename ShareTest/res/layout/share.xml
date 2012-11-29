@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:id="@+id/weibo_lvtitle"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		>
+		
+		    <Button
+			android:id="@+id/btnClose"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/weibosdk_close"
+			android:textColor="#fff"
+			android:textSize="12sp"
+			android:layout_marginLeft="6dp"
+			android:layout_marginTop="8dp"
+			android:paddingBottom="2dp"
+			
+			android:layout_alignParentLeft="true"/>
+				
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="false"
+		    android:layout_centerVertical="false"
+		    android:layout_toRightOf="@id/btnClose"
+		    android:text="@string/weibosdk_share_dialog_title"
+		    android:textColor="#000"
+		    android:layout_marginLeft="6dp"
+		    android:layout_marginTop="8dp"
+		    android:textStyle="bold" 
+		    android:gravity="center"
+		    />
+
+			<Button
+			android:id="@+id/btnSend"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/weibosdk_send"
+			android:textColor="#fff"
+			android:textSize="12sp"
+			android:layout_marginRight="6dp"
+			android:layout_marginTop="8dp"
+			android:paddingBottom="2dp"
+		    android:layout_alignParentRight="true"/>
+    
+		</RelativeLayout>
+		
+		<EditText
+			    android:id="@+id/etEdit"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_margin="3px"
+			    android:background="@null"
+			    android:gravity="top|left"
+			    android:imeOptions="actionDone"
+			    android:inputType="text"
+			    android:isScrollContainer="true"
+			    android:singleLine="false"
+			     />
+
+</LinearLayout>

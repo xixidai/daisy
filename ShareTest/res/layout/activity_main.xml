@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+    
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+      
+        />
+    <EditText 
+        android:id="@+id/txview"
+        android:layout_width="fill_parent"
+        android:layout_height="400dip"
+        android:hint="Input Pls."
+        
+        />
+    <Button 
+        android:id="@+id/btnSh"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:text="分享"
+        android:layout_below="@id/txview"
+       
+        
+        />
+    <Button 
+        android:id="@+id/btnGetList"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:text="我的微薄"
+        android:layout_below="@id/btnSh"
+         android:layout_alignParentBottom="true"
+        
+        
+        />
+
+</RelativeLayout>
