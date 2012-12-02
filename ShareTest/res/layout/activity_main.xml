@@ -13,14 +13,14 @@
     <EditText 
         android:id="@+id/txview"
         android:layout_width="fill_parent"
-        android:layout_height="400dip"
+        android:layout_height="350dip"
         android:hint="Input Pls."
         
         />
     <Button 
         android:id="@+id/btnSh"
         android:layout_width="fill_parent"
-        android:layout_height="30dip"
+        android:layout_height="60dip"
         android:text="分享"
         android:layout_below="@id/txview"
        
@@ -29,7 +29,7 @@
     <Button 
         android:id="@+id/btnGetList"
         android:layout_width="fill_parent"
-        android:layout_height="30dip"
+        android:layout_height="20dip"
         android:text="我的微薄"
         android:layout_below="@id/btnSh"
          android:layout_alignParentBottom="true"
