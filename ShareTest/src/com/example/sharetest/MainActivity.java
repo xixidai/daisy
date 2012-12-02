@@ -116,7 +116,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	@Override
 	public void onCancel() {
-		// TODO Auto-generated method stub
+		 
 		
 	}
 	
