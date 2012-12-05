@@ -31,8 +31,8 @@ public class MyweiboList extends Activity implements RequestListener {
 	int count = 50;
 	int page = 1;
 	boolean base_app = false;
-	JSONObject jsonobj = null;
-	JSONArray arry;
+//	JSONObject jsonobj = null;
+//	JSONArray arry;
 	FEATURE feature = FEATURE.ALL;
 	boolean trim_user = false;
 
@@ -94,7 +94,8 @@ public class MyweiboList extends Activity implements RequestListener {
 
 			JSONObject jitem = null;
 			for (int i = 0; i < arr.length(); i++) {
-				jitem = arr.getJSONObject(i);
+//				jitem = arr.getJSONObject(i);
+				jitem=(JSONObject)arr.opt(i);
 				result.add(jitem.getString("text"));
 			}
 
