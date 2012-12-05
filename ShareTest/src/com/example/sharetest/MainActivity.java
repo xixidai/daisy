@@ -69,7 +69,7 @@ public class MainActivity extends Activity implements OnClickListener {
 //跳转至微博列表
 		case R.id.btnGetList:
 			if(MainActivity.access_token.isSessionValid()){
-				Intent wlist =new Intent(MainActivity.this, MyweiboList.class);
+				Intent wlist =new Intent(MainActivity.this,MyweiboList.class);
 				startActivity(wlist);
 				
 			}
