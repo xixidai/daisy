@@ -3,21 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <!--
-    <ScrollView android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-        
-        <TextView 
-        android:id="@+id/txlist"
-        android:layout_height="fill_parent"
-        android:layout_width="wrap_content"/>
-    </ScrollView>
-    -->
-
+<TextView 
+    android:id="@+id/ltxview"
+    android:layout_height="40dip"
+    android:layout_width="fill_parent"
+    android:text="@string/myweibotitle"
+    android:gravity="center"
+    android:textColor="#0A0A0A"
+    android:background="#FF82AB"
+    />
     <ListView
         android:id="@+id/lvWeibo"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent" >
+        android:layout_height="fill_parent" 
+        android:layout_below="@+id/ltxview"
+        >"
     </ListView>
 
 </RelativeLayout>

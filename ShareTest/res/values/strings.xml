@@ -8,6 +8,7 @@
      <string name="weibosdk_share_dialog_title">转发分享</string>
      <string name="weibosdk_send">发送</string>
      <string name="weibosdk_send_sucess">发送成功</string>
+     <string name="myweibotitle">微博列表</string>
    
 
 </resources>
