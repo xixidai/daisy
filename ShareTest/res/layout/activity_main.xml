@@ -2,19 +2,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
-
-    <TextView
-    
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-       
+ <!--  
+   <ImageView
+      android:id="@+id/imgPhoto"
+      android:layout_width="fill_parent"
+      android:layout_height="30dip"
+      android:background="#FF82AB"
+      android:scaleType="fitCenter"
       
-        />
+ 
+     />
+    -->
     <EditText 
         android:id="@+id/txview"
         android:layout_width="fill_parent"
         android:layout_height="350dip"
         android:hint="Input Pls."
+     
+       
         
         />
     <Button 
@@ -30,7 +35,7 @@
         android:id="@+id/btnGetList"
         android:layout_width="fill_parent"
         android:layout_height="20dip"
-        android:text="我的微薄"
+        android:text="我的微博"
         android:layout_below="@id/btnSh"
          android:layout_alignParentBottom="true"
         

@@ -2,6 +2,7 @@ package com.example.sharetest;
 
 import java.text.SimpleDateFormat;
 
+
 import com.weibo.sdk.android.Oauth2AccessToken;
 import com.weibo.sdk.android.Weibo;
 import com.weibo.sdk.android.WeiboAuthListener;
@@ -9,14 +10,17 @@ import com.weibo.sdk.android.WeiboDialogError;
 import com.weibo.sdk.android.WeiboException;
 import com.weibo.sdk.android.keep.AccessTokenKeeper;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 
 import android.view.View;
+import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 
 public class MainActivity extends Activity implements OnClickListener {
@@ -28,11 +32,13 @@ public class MainActivity extends Activity implements OnClickListener {
 	EditText txview;
 	Button btnSh,btnGetList;
 	private Weibo mweibo;
-	
+	ImageView imgPhoto;
+//	String uri="Home/Desktop/face10.jpg";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+    	requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
         
         txview=(EditText)findViewById(R.id.txview);
@@ -46,6 +52,12 @@ public class MainActivity extends Activity implements OnClickListener {
         btnGetList.setOnClickListener(this);
         
         mweibo = Weibo.getInstance(appKey, redirectUrl);
+        
+//        imgPhoto =(ImageView)findViewById(R.id.imgPhoto);
+        
+//        imgPhoto.setImageResource(R.drawable.face10);
+//          imgPhoto.setImageURI(Uri.parse(uri));
+        
          }
     @Override
 	public void onClick(View v) {
