@@ -40,7 +40,20 @@
             android:layout_height="50dip"
             android:layout_alignParentRight="true"
             android:layout_marginRight="2dip" >
-            <Button />
+
+            <Button
+                android:id="@+id/CoB"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:background="#FF82AB"
+                android:text="Back" />
+
+            <ImageView
+                android:id="@+id/CoI"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:scaleType="fitStart"
+                android:src="@drawable/attitude_love2" />
         </RelativeLayout>
     </RelativeLayout>
 
@@ -50,6 +63,33 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/layinfor"
         android:gravity="left|center_vertical"
-        android:padding="4dip" />
+        android:padding="4dip"
+        android:text="yayayyayay" />
+
+    <RelativeLayout
+        android:id="@+id/laybtns"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#FF82AB"
+        android:layout_alignParentBottom="true" >
+        <Button 
+             android:id="@+id/ZF"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:background="#F0FFF0"
+                android:text="转发"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dip"/>
+        <Button 
+             android:id="@+id/PL"
+             android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:background="#F0FFF0"
+                android:text="评论"
+                android:layout_toRightOf="@id/ZF"
+                android:layout_marginLeft="20dip"
+            />
+         
+    </RelativeLayout>
 
 </RelativeLayout>

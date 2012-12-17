@@ -31,7 +31,7 @@ public class jsontest extends Activity implements RequestListener{
 	long since_id =0;
 	long max_id=0;
 	int count=100;
-	int page=2;
+	int page=1;
 	boolean base_app=false;
 	FEATURE feature=FEATURE.ALL;
 	boolean trim_user =false;
@@ -51,6 +51,7 @@ public class jsontest extends Activity implements RequestListener{
 	@Override
 	public void onComplete(String response) {
 		list=getJASON(response);
+//	Log.e("tag", "list");
 		adapter=new WeiboAdapter(this,list);
 		runOnUiThread(new Thread(){
 			public void run(){
@@ -75,13 +76,13 @@ public class jsontest extends Activity implements RequestListener{
 	}
 	
 public List<String> getJASON(String json){
-	List<String> ret = new ArrayList();
+	List<String> ret = new ArrayList<String>();
 try{
 	JSONObject j= new JSONObject(json);
 	JSONArray arr=j.getJSONArray("statuses");
 
 	JSONObject jitem =null;
-	for(int i=0;i<=arr.length();i++){
+	for(int i=0;i<arr.length();i++){
 		jitem=(JSONObject)arr.opt(i);
 		ret.add(jitem.getString("text"));
 	}
