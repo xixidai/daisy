@@ -50,12 +50,15 @@ public class WeiboAdapter extends BaseAdapter {
 		if (holder == null) {
 			holder = new WeiboHolder();
 			holder.tvItem = (TextView) v.findViewById(R.id.tvItem);
+			holder.myNickname=(TextView)v.findViewById(R.id.myNickname);
+			
 			v.setTag(holder);
 		}
 		
 		String item = list.get(position);
 		if (item != null) {
 			holder.tvItem.setText(item);
+			holder.myNickname.setText(item);
 		}
 		
 		return v;

@@ -94,12 +94,12 @@ public class MyweiboList extends Activity implements RequestListener {
 		try {
 			JSONObject j = new JSONObject(json);
 			JSONArray arr = j.getJSONArray("statuses");
-
 			JSONObject jitem = null;
 			for (int i = 0; i < arr.length(); i++) {
 //				jitem = arr.getJSONObject(i);
 				jitem=(JSONObject)arr.opt(i);
 				result.add(jitem.getString("text"));
+				result.add(jitem.getString("created_at"));
 			}
 
 		} catch (Exception e) {

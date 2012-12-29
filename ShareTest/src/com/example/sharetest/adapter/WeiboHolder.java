@@ -5,4 +5,6 @@ import android.widget.TextView;
 public class WeiboHolder {
 
 	public TextView tvItem;
+	public TextView myNickname;
+	
 }
