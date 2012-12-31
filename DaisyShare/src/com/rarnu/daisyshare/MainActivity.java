@@ -22,7 +22,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_ACTION_BAR);
 		bar = getActionBar();
-		bar.setDisplayOptions(0, ActionBar.DISPLAY_SHOW_CUSTOM);
+		bar.setDisplayOptions(0, ActionBar.DISPLAY_SHOW_CUSTOM );
 
 		fShare = new TextFragment();
 		getFragmentManager().beginTransaction()
@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
 		item.setIcon(android.R.drawable.ic_menu_share);
 		provider = new ShareActionProvider(this);
 		item.setActionProvider(provider);
-		provider.setShareHistoryFileName(ShareActionProvider.DEFAULT_SHARE_HISTORY_FILE_NAME);
+//		provider.setShareHistoryFileName(ShareActionProvider.DEFAULT_SHARE_HISTORY_FILE_NAME);
 		provider.setShareIntent(shareIntent);
 
 		return true;
